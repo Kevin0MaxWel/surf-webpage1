@@ -1,0 +1,268 @@
+:root
+{
+--cbtn-primary: rgb(243, 92, 34);
+--bk-color:rgb(243, 92, 34); 
+--basis-color:rgba(255, 87, 20, 0.194);
+--c-text:rgb(250, 250, 250);
+--c-body:#fff;
+--font-base:"Nunito Sans";
+--transition: all 0.5s ease;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+*.row{
+    margin-right: calc(-.0* var(--bs-gutter-x))!important;
+    margin-left: calc(-.0* var(--bs-gutter-x)) !important;
+}
+*.container-fluid
+{
+    margin-right: calc(-.0* var(--bs-gutter-x))!important;
+    margin-left: calc(-.0* var(--bs-gutter-x)) !important;
+    padding-right: calc(var(--bs-gutter-x)* .0) !important; 
+     padding-left: calc(var(--bs-gutter-x)* .0) !important;
+}
+body
+{
+font-family: var(--font-base);
+color: var(--c-text);
+background-color:var(--c-body);
+}
+
+a{
+    text-decoration:none !important;
+    transition: var(--transition) !important;
+    color: var(--customer-link) !important;
+}
+a:hover{
+    color: var(--cbtn-primary) !important;
+}
+li
+{
+ list-style: none;
+}
+/* HEADER */
+  header{
+    background-color: var(--c-body);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: 0.3s; 
+    position: relative;
+    z-index: 99;
+    }
+ header:hover
+  {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+  
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+}
+body{
+    position: relative;
+}
+.pop-container
+{
+    position: absolute;
+    z-index: 9999;
+    width:100%;
+    height: 100vh;
+    left: 0;
+    opacity: 0;
+    display:none;
+}
+.pop-background
+{
+    position: relative;
+}
+.pop-postion
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:50px;
+    background-color: var(--c-body);
+    width: 800px;
+}
+.pop-color
+{
+ background-color: #EDEDED;
+}
+.pop-up-btn img
+{
+ width: 20px;
+}
+li
+{
+    font-size: 15px;
+    padding: 5px 3px;
+    font-weight:500;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.custom-dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    transition: all 0.3s ease; /* Adjust the timing as needed */
+}
+.dropdown-menu {
+    pointer-events: auto;
+}
+.slide-img
+{
+    height: 80vh;
+    position: relative;
+}
+.surf-content 
+{
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--c-text);
+}
+
+.surf-content button
+{
+    background-color: var(--cbtn-primary);
+    color: var(--c-text);
+    min-width:30%;
+    border-radius: 0px;
+    padding: 15px;
+}
+              
+/* board-item */
+
+.board-item 
+{
+ padding-top: 100px;
+ padding-bottom: 50px;
+}
+.board-background-color
+{
+    background-color: var(--c-body);
+}
+#sub-navi > div
+{
+    padding-top: 20px;
+}
+#sub-navi a:hover{
+    color: orange;
+}
+
+.product-content {
+    position: relative;
+    /* overflow: hidden;  */
+    padding: 10px 10px;
+}
+.product-content img {
+
+    transition: transform 0.3s ease; 
+}
+.product-content img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.prod-name
+{
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px 5px;
+}
+.prod-price
+{
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+.prod-link
+{
+    font-size: 20px;
+    padding: 5px 5px;
+    color: var(--cbtn-primary);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.see-all-btn button{
+    margin: 0rem auto;
+    background-color: var(--cbtn-primary);
+    color: var(--c-text);
+    height:auto;
+    font-size: 25px;
+    font-weight: lighter;
+    border-radius: 0px;
+    padding: 10px 70px;
+    transition: ease-out;
+}
+
+.see-all-btn{
+    margin: 0rem auto;
+    width: fit-content;
+ }
+
+/* blog-1 */
+ 
+.sign-up
+{
+ width: 100%;
+ height: 50%;
+ padding-top:10%;
+ padding-bottom: 30%;
+ background-color: var(--bk-color);
+ color: var(--c-text);
+}
+.customer-input 
+{
+    padding-top: 50px;
+}
+.customer-input input
+{
+  padding: 10px 150px 10px 150px;
+}
+@media (max-width:800px){
+    .customer-input input
+{
+  padding: 10px 80px 10px 80px;
+}
+}
+
+@media (max-width:800px){
+    .customer-input input
+{
+  padding: 10px 50px 10px 50px;
+}
+}
+.sign-info  .sign-btn 
+{
+    padding: 25px 50px;
+    margin-top: 10px;
+    border-radius: 0px;
+}
+/* footer */
+
+ footer .web-wave
+ {
+  background-color: black;
+  color: var(--c-text);
+  text-align: center;
+ }
